@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>dji_tello_aruco</name>
+  <version>0.0.1</version>
+  <description>Nodo ROS2 per ArUco detection sullo stream video del Tello</description>
+
+  <maintainer email="tuo@email.com">Il Tuo Nome</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>OpenCV</depend>
+  <depend>dji_tello_interfaces</depend>  <!-- pacchetto custom -->
+  <depend>tf2_ros</depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
+

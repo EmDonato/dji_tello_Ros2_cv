@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>dji_tello_interfaces</name>
+  <version>0.0.1</version>
+  <description>Interfaces for DJI Tello (services and messages)</description>
+
+  <maintainer email="mcf.donato@gmail.com">genesis</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <build_depend>rosidl_default_generators</build_depend>
+  <exec_depend>rosidl_default_runtime</exec_depend>
+
+  <!-- 👇 deve stare QUI -->
+  <member_of_group>rosidl_interface_packages</member_of_group>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
+

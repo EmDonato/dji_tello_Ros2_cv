@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>dji_tello_yolo</name>
+  <version>0.0.1</version>
+  <description>YOLO person detection node for DJI Tello</description>
+  <maintainer email="mcf.donato@email.com">tuo_nome</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>ultralytics</exec_depend>
+  <exec_depend>opencv-python</exec_depend>
+  <depend>dji_tello_interfaces</depend>  <!-- pacchetto custom -->
+  
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

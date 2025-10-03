@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>dji_tello_ros2</name>
+  <version>0.0.1</version>
+  <description>ROS 2 package for DJI Tello teleoperation with gamepad</description>
+
+  <maintainer email="mcf.donato@gmail.com">genesis</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- ROS 2 dependencies -->
+  <depend>rclcpp</depend>
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>nav_msgs</depend>          <!-- per Odometry -->
+  <depend>tf2</depend>               <!-- per Quaternion -->
+  <depend>cv_bridge</depend>         <!-- per conversione OpenCV -> ROS Image -->
+  <depend>dji_tello_interfaces</depend>  <!-- pacchetto custom -->
+  <depend>camera_info_manager</depend>
+  <depend>tf2_ros</depend>
+
+  <!-- OpenCV viene risolto dal CMake con find_package -->
+  <depend>opencv</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
+
