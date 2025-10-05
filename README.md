@@ -187,7 +187,7 @@ Switching camera updates the active calibration automatically.
 
 ---
 
-## 🦯 TF Frames
+##  TF Frames
 
 | Parent       | Child                          | Description                      |
 | :----------- | :----------------------------- | :------------------------------- |
